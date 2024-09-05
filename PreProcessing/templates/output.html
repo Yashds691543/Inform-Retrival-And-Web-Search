@@ -1,0 +1,24 @@
+<html>
+   <head>
+      <meta charset='UTF-8'>
+   </head>
+   <body>
+      <p>
+        <b>Below documents list is ranked based on the cosine similarity</b>
+      </p>
+      <table>
+          <tr>
+              <th>File Name</th>
+              <th>Link</th>
+          </tr>
+          {% for i in range(0,length)%}
+          <tr>
+              <td><b>{{file[i]}}</b></td>
+              <td><a href={{link[i]}}> {{link[i]}} </a></td>
+          </tr>
+          {%endfor%}
+      </table>
+      <br/>
+      <br/>
+   </body>
+</html>

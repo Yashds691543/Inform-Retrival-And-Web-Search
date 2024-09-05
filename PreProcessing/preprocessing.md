@@ -20,19 +20,16 @@ This repository contains a Jupyter Notebook that implements web scraping and a b
 - NLTK (for text processing): `pip install nltk`
 
 ## Usage
-1. Clone this repository:
-    ```bash
-    git clone https://github.com/yourusername/your-repo.git
-    ```
-2. Install the necessary Python packages:
+
+1. Install the necessary Python packages:
     ```bash
     pip install -r requirements.txt
     ```
-3. Run the Flask application:
+2. Run the Flask application:
     ```bash
     python app.py
     ```
-4. Access the search engine via `http://127.0.0.1:5002` in your browser.
+3. Access the search engine via `http://127.0.0.1:5002` in your browser.
 
 ## How It Works
 - The search engine reads a list of pre-processed documents.

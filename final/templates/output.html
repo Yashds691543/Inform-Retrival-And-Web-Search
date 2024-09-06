@@ -1,0 +1,40 @@
+<html>
+   <head>
+      <meta charset='UTF-8'>
+   </head>
+   <style>
+      table, th, td {
+      border:1px solid black;
+      border-collapse: collapse;
+      }
+   </style>
+   <body>
+      <br/>
+      <br/>
+      <p align="center">
+         <b>Below details are the evaluation of the specific queries</b>
+      </p>
+      <br/>
+      <table style="width:100%">
+         <tr>
+            <th><b>Query</b></th>
+            <th><b>Precision</b></th>
+            <th><b>Recall</b></th>
+            <th><b>F_Score</b></th>
+         </tr>
+         <tbody>
+
+            {% for result in results %}
+<tr>
+   <td>{{ result[0] }}</td>  <!-- Query String -->
+   <td>{{ result[1] }}</td>  <!-- Precision -->
+   <td>{{ result[2] }}</td>  <!-- Recall -->
+   <td>{{ result[3] }}</td>  <!-- F-Score -->
+</tr>
+{% endfor %}
+         </tbody>
+      </table>
+      <br/>
+      <br/>
+   </body>
+</html>
